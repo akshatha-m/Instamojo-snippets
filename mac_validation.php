@@ -5,7 +5,7 @@ Author: Ashwini Chaudhary
 Program for validating MAC received with Webhook POST request.
  
 What is MAC: http://support.instamojo.com/support/solutions/articles/139575-what-is-the-message-authentication-code-in-webhook-
-/*
+*/
 
 $data = $_POST;
 $mac = $data['mac'];  // Get the MAC from the POST data
