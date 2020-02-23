@@ -72,7 +72,9 @@ class Signature{
             throw new RuntimeException("Map is Empty");
         }
 
-        // Get hash
+        
+	
+	// Get hash
         SecretKeySpec signingKey = new SecretKeySpec(salt.getBytes(), ALGORITHM);
         Mac mac = Mac.getInstance(ALGORITHM);
         mac.init(signingKey);
