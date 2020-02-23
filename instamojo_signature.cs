@@ -47,7 +47,10 @@ namespace Instamojo
             };
             
             string msg = MsgCreator(data);
-            string signature = ShaHash(msg, salt);
+
+
+
+	    string signature = ShaHash(msg, salt);
             Console.WriteLine(signature);
         }
 
