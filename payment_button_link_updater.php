@@ -18,6 +18,8 @@ function Instamojo_remote_checkout_button_updater($new_payment_link, $payment_bu
         break;
     }
     
+
+
     $node->setAttribute('href', $new_payment_link);
     $html = $doc->saveHTML();
     $output = Array(); 
