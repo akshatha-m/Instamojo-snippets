@@ -74,7 +74,10 @@ class Signature{
 
         // Get hash
         SecretKeySpec signingKey = new SecretKeySpec(salt.getBytes(), ALGORITHM);
-        Mac mac = Mac.getInstance(ALGORITHM);
+
+
+
+	Mac mac = Mac.getInstance(ALGORITHM);
         mac.init(signingKey);
         return toHexString(mac.doFinal(message.getBytes()));
     }
